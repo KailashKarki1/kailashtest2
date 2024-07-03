@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="795.0" prefWidth="1010.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="com.example.csd214test2bkailash.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kailash Karki" />
+   <Pane prefHeight="297.0" prefWidth="798.0">
+      <children>
+         <Text layoutX="140.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TotalPrice" />
+         <Text layoutX="140.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" />
+         <Text layoutX="140.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ProductName" />
+         <Text layoutX="140.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OrderId" />
+         <TextField fx:id="xTotalPrice" layoutX="229.0" layoutY="191.0" text="TP" />
+         <TextField fx:id="xQuantity" layoutX="229.0" layoutY="118.0" text="Q" />
+         <TextField fx:id="xProductName" layoutX="229.0" layoutY="57.0" text="PN" />
+         <TextField fx:id="xOrderID" layoutX="229.0" text="OID" />
+      </children>
+   </Pane>
+
+    <Label fx:id="welcomeText" />
+   <Button onAction="#Read" mnemonicParsing="false" text="read" />
+   <Button onAction="#Load" mnemonicParsing="false" text="load" />
+    <Button onAction="#Create" text="create" />
+   <Button onAction="#Delete" mnemonicParsing="false" text="delete" />
+   <Button onAction="#Update" mnemonicParsing="false" text="update" />
+   <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+     <columns>
+       <TableColumn fx:id="OrderID" prefWidth="75.0" text="OrderID" />
+       <TableColumn fx:id="ProductName" prefWidth="75.0" text="ProductName" />
+         <TableColumn fx:id="Quantity" prefWidth="75.0" text="Quantity" />
+         <TableColumn fx:id="TotalPrice" prefWidth="75.0" text="TotalPrice" />
+     </columns>
+   </TableView>
+</VBox>
